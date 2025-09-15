@@ -1,0 +1,50 @@
+{
+  "name": "outdoor-backup",
+  "version": "0.0.1",
+  "description": "Keeps a set of files up to date.",
+  "engineStrict": true,
+  "engines": {
+    "node": "24.14.1",
+    "npm": "11.12.1"
+  },
+  "main": "index.js",
+  "author": "EIGHTFINITE",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EIGHTFINITE/outdoor-backup.git"
+  },
+  "homepage": "https://github.com/EIGHTFINITE/outdoor-backup/releases/latest",
+  "dependencies": {
+    "electron": "github:EIGHTFINITE/electron#main",
+    "electron-chrome-extensions": "github:EIGHTFINITE/electron-chrome-extensions#main",
+    "lodash.isinteger": "4.0.4",
+    "top-user-agents": "github:EIGHTFINITE/top-user-agents-1#main"
+  },
+  "optionalDependencies": {
+  },
+  "devDependencies": {
+    "better-npm-audit": "github:EIGHTFINITE/better-npm-audit#main",
+    "corepack": "0.34.6",
+    "electron": "41.2.0",
+    "npm": "11.12.1"
+  },
+  "peerDependencies": {
+    "electron": "41.2.0",
+    "electron-chrome-extensions": "4.9.0",
+    "top-user-agents": "1.0.66"
+  },
+  "bundleDependencies": [
+    "debug",
+    "electron",
+    "electron-chrome-extensions",
+    "lodash.isfunction",
+    "lodash.isinteger",
+    "lodash.isstring",
+    "ms",
+    "spdx-exceptions",
+    "spdx-expression-parse",
+    "spdx-license-ids",
+    "top-user-agents"
+  ]
+}
