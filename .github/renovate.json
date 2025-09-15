@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard",
+    ":disablePrControls",
+    ":gitSignOff",
+    ":rebaseStalePrs",
+    ":skipStatusChecks"
+  ],
+  "labels": ["dependencies", "do-not-merge"],
+  "rollbackPrs": true,
+  "packageRules": [
+    {
+      "matchPackageNames": ["corepack", "electron", "electron-chrome-extensions", "node", "npm", "spdx-expression-parse"],
+      "labels": ["dependencies", "automerge"],
+      "automerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "fast-forward",
+      "ignoreTests": true
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": false
+  }
+}

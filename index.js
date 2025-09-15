@@ -1,0 +1,374 @@
+#!/usr/bin/env node
+'use strict';
+
+require('events').EventEmitter.defaultMaxListeners = 11
+const workingDirectory = __dirname
+const isWindows = /^win/.test(process.platform)
+const nodeVersion = require('./package.json').engines.node
+const npmVersion = require('./bin/windows/x64/node/node-v'+nodeVersion+'-win-x64/node_modules/npm/package.json').version
+const electronVersion = require('./package.json').devDependencies.electron
+const pagelist = require('./pagelist.json')
+const fs = require('./bin/windows/x64/node/node-v'+nodeVersion+'-win-x64/node_modules/npm/node_modules/graceful-fs')
+try {
+	fs.unlinkSync('.userData')
+}
+catch(err) {
+	if (err.code !== 'ENOENT') {
+		throw err
+	}
+}
+
+// Executable check
+if(process.versions.electron) {
+	// Validate executable
+	console.log('Running on Electron ' + process.versions.electron + ' + Node ' + process.versions.node + ' + Chrome ' + process.versions.chrome)
+	if(process.versions.electron !== electronVersion) {
+		console.error('Expected Electron ' + electronVersion + ' instead of Electron ' + process.versions.electron)
+		process.exit(1)
+		return
+	}
+
+	// Require
+	const { app, session, BrowserWindow } = require('electron')
+	const { ElectronChromeExtensions } = require('electron-chrome-extensions')
+	const isInt = require('lodash.isinteger')
+	const isString = require('lodash.isstring')
+	const randomInteger = require('./lib/randomInteger.js')
+	const electronUserAgent = require('./node_modules/top-user-agents/index.json')[0]
+	console.log('User Agent set to "' + electronUserAgent + '"')
+
+	// Clean up browser storage
+	const userData = app.getPath('userData')
+	let userDataDir = null
+	try {
+		userDataDir = fs.readdirSync(userData, {withFileTypes: true})
+	}
+	catch(err) {
+		if (err.code !== 'ENOENT') {
+			throw err
+		}
+	}
+	if(userDataDir !== null && userDataDir.length > 0) {
+		console.log('Cleaning "' + userData + '"')
+		for (let i = 0; i < userDataDir.length; i++) {
+			if(userDataDir[i].isDirectory()) {
+				try {
+					fs.rmSync(userData + (isWindows ? '\\' : '/') + userDataDir[i].name, { recursive: true })
+				}
+				catch(err) {
+					if (err.code !== 'ENOENT') {
+						throw err
+					}
+				}
+			}
+			else {
+				try {
+					fs.unlinkSync(userData + (isWindows ? '\\' : '/') + userDataDir[i].name)
+				}
+				catch(err) {
+					if (err.code !== 'ENOENT') {
+						throw err
+					}
+				}
+			}
+		}
+	}
+	// Confirm browser storage is clean
+	userDataDir = null
+	try {
+		userDataDir = fs.readdirSync(userData)
+	}
+	catch(err) {
+		if (err.code !== 'ENOENT') {
+			throw err
+		}
+	}
+	if(userDataDir !== null && userDataDir.length > 0) {
+		fs.writeFileSync('.userData', userData, 'utf-8')
+		console.error('Expected "' + userData + '" to be empty')
+		console.error('Directory will now be cleaned, run the application again after')
+		process.exit(1)
+		return
+	}
+
+	// Run
+	app.whenReady().then(async () => {
+		app.userAgentFallback = electronUserAgent;
+
+		const browserSession = session.defaultSession
+		const extensions = new ElectronChromeExtensions({
+			license: 'GPL-3.0',
+			session: browserSession
+		})
+		const browserWindow = new BrowserWindow({
+			width: 1920,
+			height: 969,
+			frame: false,
+			show: false,
+			webPreferences: {
+				session: browserSession, // Use same session given to Extensions class
+				sandbox: true, // Required for extension preload scripts
+				contextIsolation: true, // Recommended for loading remote content
+				devTools: false,
+				backgroundThrottling: false,
+				additionalArguments: ['--js-flags="--jitless"']
+			},
+		})
+
+		const allExtensions = browserSession.extensions.getAllExtensions()
+		if(!Array.isArray(allExtensions) || allExtensions.length !== 0) {
+			console.error('Expected no extensions to be installed')
+			process.exit(1)
+			return
+		}
+
+		// Enable extensions
+		extensions.addTab(browserWindow.webContents, browserWindow)
+		console.log('Loading uBlock Origin ' + require('./extensions/uBlock0.chromium/manifest.json').version)
+		const extension = await browserSession.extensions.loadExtension(workingDirectory + (isWindows ? '\\extensions\\uBlock0.chromium' : '/extensions/uBlock0.chromium'));
+		if (extension) {
+			if (extension.manifest.manifest_version === 3) {
+				if(extension.manifest.background?.service_worker) {
+					await browserSession.serviceWorkers.startWorkerForScope('chrome-extension://' + extension.id).catch(() => {
+						console.error('Failed to start worker for extension')
+						process.exit(1)
+						return
+					})
+				}
+				console.log('Successfully loaded MV3 extension uBlock Origin')
+			}
+			else if(extension.manifest.manifest_version === 2) {
+				console.log('Successfully loaded MV2 extension uBlock Origin')
+			}
+			else {
+				console.error('Unrecognized extension manifest')
+				process.exit(1)
+				return
+			}
+		}
+		else {
+			console.error('Extension failed to load')
+			process.exit(1)
+			return
+		}
+
+		// Disallow new windows
+		browserWindow.webContents.setWindowOpenHandler(({ url }) => {
+			console.log('Blocked "' + url + '" because it would\'ve created a new window')
+			return { action: 'deny' }
+		})
+
+		// Mute browser
+		browserWindow.webContents.setAudioMuted(true);
+
+		// Disallow access to microphone, camera, location, clipboard, screen recording and so on
+		// Still allows images and JavaScript since they're not part of this system
+		browserSession.setPermissionRequestHandler((webContents, permission, callback, details) => {
+			if(permission === 'media') {
+				let mediaTypes = []
+				if(Array.isArray(details.mediaTypes)) {
+					mediaTypes = details.mediaTypes.filter((val) => {
+						return isString(val)
+					})
+				}
+				console.log('Denied access to "media" (' + (mediaTypes.length > 0 ? mediaTypes.join(', ') : 'unknown') + ') permission requested by ' + (isString(details.requestingUrl) ? '"' + details.requestingUrl + '"' : 'site'))
+			}
+			else {
+				console.log('Denied access to "' + permission + '" permission requested by ' + (isString(details.requestingUrl) ? '"' + details.requestingUrl + '"' : 'site'))
+			}
+			return callback(false)
+		})
+		browserSession.setPermissionCheckHandler((webContents, permission, requestingOrigin, details) => {
+			if(isString(details.embeddingOrigin) && details.embeddingOrigin.startsWith('chrome-extension://' + extension.id + '/')) {
+				if(permission === 'media') {
+					if(isString(details.mediaType) && details.mediaType === 'video' || details.mediaType === 'audio') {
+						// Is always requested for every extension regardless of the extension's permissions
+						// Allow access without spamming the console
+					}
+					else {
+						console.log('Allowed access to "media" (' + (isString(details.mediaType) ? details.mediaType : 'unknown') + ') permission requested by uBlock Origin')
+					}
+				}
+				else if(permission === 'geolocation' || permission === 'window-management' || permission === 'web-app-installation') {
+					// Is always requested for every extension regardless of the extension's permissions
+					// Allow access without spamming the console
+				}
+				else if(permission === 'background-sync') {
+					// Expected permission requested by uBlock Origin
+					// Allow access without spamming the console
+				}
+				else {
+					console.log('Allowed access to "' + permission + '" permission requested by uBlock Origin')
+				}
+				return true
+			}
+			if(permission === 'media') {
+				if(isString(details.mediaType) && details.mediaType === 'video' || details.mediaType === 'audio') {
+					// Is always requested for every site even internal pages
+					// Needed to make sure that pages with video or audio content are rendered correctly
+					// Allow access without spamming the console
+					return true
+				}
+				else {
+					console.log('Denied access to "media" (' + (isString(details.mediaType) ? details.mediaType : 'unknown') + ') permission requested by ' + (isString(details.embeddingOrigin) ? '"' + details.embeddingOrigin + '"' : 'site'))
+				}
+			}
+			else if(permission === 'geolocation' || permission === 'window-management' || permission === 'web-app-installation') {
+				// Is always requested for every site even internal pages
+				// Deny access without spamming the console
+			}
+			else {
+				console.log('Denied access to "' + permission + '" permission requested by ' + (isString(details.embeddingOrigin) ? '"' + details.embeddingOrigin + '"' : 'site'))
+			}
+			return false
+		})
+
+		console.log('Initializing web browser')
+		await browserWindow.loadURL('about:blank')
+		console.log('Starting uBlock Origin')
+		const randomInt = randomInteger(0,2);
+		// One real web request is needed for uBlock Origin to load its filter lists
+		// Unfortunately this is the only real site that's reserved, functional, and without trackers
+		if(randomInt === 0) {
+			await browserWindow.loadURL('https://www.example.com/')
+		}
+		else if(randomInt === 1) {
+			await browserWindow.loadURL('https://www.example.net/')
+		}
+		else { // randomInt === 2
+			await browserWindow.loadURL('https://www.example.org/')
+		}
+		// Uncomment the next line of code to test if uBlock Origin is functioning correctly
+		//await browserWindow.loadURL('https://browserleaks.com/proxy')
+
+		// Start processing the pages
+		const pageFiles = async () => {
+			const pagelistArray = Object.keys(pagelist.pages).map((key) => {
+				return [key, pagelist.pages[key]]
+			})
+			// Loop over the pages
+			for (let i = 0, backoff = 0; i < pagelist.pages.length; i++) {
+				console.log(pagelist.pages[i])
+			}
+			browserWindow.close()
+		}
+		pageFiles()
+
+		browserWindow.on('close', () => {
+			app.exit()
+		})
+	})
+
+	// Shutdown
+	app.on('quit', () => {
+		// Write Readme
+		writeReadme(pagelist)
+		// Clean up browser storage
+		fs.writeFileSync('.userData', userData, 'utf-8')
+		// Exit message
+		console.log('Exiting Electron ' + process.versions.electron + ' + Node ' + process.versions.node + ' + Chrome ' + process.versions.chrome)
+	})
+	
+	process.on('unhandledRejection', (err) => {
+		console.error('UnhandledPromiseRejectionWarning:', err)
+		process.exit(1)
+	})
+}
+else {
+	// Validate executable
+	console.log('Running on Node ' + process.versions.node + ' + npm ' + npmVersion)
+	if(process.versions.node !== nodeVersion) {
+		throw Error('Expected Node ' + nodeVersion + ' instead of Node ' + process.versions.node)
+	}
+
+	// Write Readme
+	if(process.argv.slice(2).includes('--readme_only')) {
+		writeReadme(pagelist)
+		return
+	}
+
+	// Function
+	const startElectron = () => {
+		console.log('Starting Electron ' + electronVersion)
+		process.env.ELECTRON_OVERRIDE_DIST_PATH = (isWindows ? 'bin/windows/x64/electron/electron-v' + electronVersion + '-win32-x64' : 'bin/linux/x64/electron/electron-v' + electronVersion + '-linux-x64')
+		const electron = require('electron')
+		const { spawn } = require('child_process')
+		spawn(electron, ['--use_strict', 'index.js'], { stdio: 'inherit' })
+	}
+
+	// Unpack Electron
+	if(isWindows) {
+		const { deleteFilesStartsWith } = require('./lib/deleteFiles.js')
+		fs.stat('bin\\windows\\x64\\electron\\electron-v' + electronVersion + '-win32-x64\\electron.exe', (err, stat) => {
+			const winElectronPath = 'bin\\windows\\x64\\electron\\electron-v' + electronVersion + '-win32-x64'
+			if (err) {
+				if (err.code !== 'ENOENT') {
+					throw err;
+				}
+				console.log('Need to unpack Electron')
+				const p7zipUnpack = require('./lib/p7zipUnpack.js')
+				p7zipUnpack(winElectronPath + '\\electron.exe.001', winElectronPath, '-tsplit', (err) => {
+					if (err) {
+						throw err;
+					}
+					deleteFilesStartsWith(winElectronPath, 'electron.exe.', (err) => {
+						if (err) {
+							throw err;
+						}
+						startElectron()
+					})
+				})
+				return
+			}
+			else if(!stat.isFile()) {
+				fs.rmSync(endPath, { recursive: true })
+			}
+			deleteFilesStartsWith(winElectronPath, 'electron.exe.', (err) => {
+				if (err) {
+					throw err;
+				}
+				startElectron()
+			})
+		})
+	}
+	else {
+		startElectron()
+	}
+
+	// Shutdown
+	process.on('exit', () => {
+		// Clean up browser storage
+		let userData = null
+		try {
+			userData = fs.readFileSync('.userData')
+		}
+		catch(err) {
+			if (err.code !== 'ENOENT') {
+				throw err
+			}
+		}
+		if(userData !== null) {
+			fs.unlinkSync('.userData')
+			let stat = null
+			try {
+				stat = fs.statSync(userData)
+			}
+			catch(err) {
+				if (err.code !== 'ENOENT') {
+					throw err
+				}
+			}
+			if(stat !== null) {
+				console.log('Cleaning "' + userData + '"')
+				if(stat.isDirectory()) {
+					fs.rmSync(userData, { recursive: true })
+				}
+				else {
+					fs.unlinkSync(userData)
+				}
+			}
+		}
+		// Exit message
+		console.log('Exiting Node ' + process.versions.node + ' + npm ' + npmVersion)
+	})
+}
