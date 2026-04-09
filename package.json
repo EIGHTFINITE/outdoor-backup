@@ -40,6 +40,7 @@
     "electron",
     "electron-chrome-extensions",
     "lodash.isinteger",
+    "lodash.isstring",
     "ms",
     "top-user-agents"
   ]
