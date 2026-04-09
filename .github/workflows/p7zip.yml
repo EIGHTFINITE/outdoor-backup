@@ -1,0 +1,57 @@
+name: "p7zip"
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions: write-all
+
+jobs:
+  p7zip:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6.0.2
+    - name: p7zip
+      shell: bash
+      run: |
+        bash --noprofile --norc -e -o pipefail .github/workflows/git-config.sh
+        p7zip_version=$(curl -sS "https://api.github.com/repos/ip7z/7zip/releases/latest" | python -c "import sys, json; print(json.load(sys.stdin)['tag_name'])")
+        echo "$p7zip_version"
+        p7zip_short=${p7zip_version//./}
+        echo "$p7zip_short"
+        sed -i "0,/\"p7zip-short\": \".*\"/s//\"p7zip-short\": \"$p7zip_short\"/" pagelist.json
+        sed -i "0,/\"p7zip-version\": \".*\"/s//\"p7zip-version\": \"$p7zip_version\"/" pagelist.json
+        git add pagelist.json
+        git -c user.name="GitHub" -c user.email="noreply@github.com" commit --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" -m"Update 7z to $p7zip_version" || true
+        echo "p7zip_version=$p7zip_version" >> $GITHUB_ENV
+    - id: cpr
+      uses: peter-evans/create-pull-request@v8.1.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Update README
+        author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+        committer: GitHub <noreply@github.com>
+        title: "Update 7z to ${{ env.p7zip_version }}"
+        body: |
+          Update 7-Zip to the latest version found on https://github.com/ip7z/7zip/releases
+          
+          Changelog: https://www.7-zip.org/history.txt
+        labels: automerge
+        branch: actions/p7zip
+        base: master
+    - name: get repository name
+      if: ${{ steps.cpr.outputs.pull-request-number }}
+      shell: bash
+      run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+    - name: automerge
+      if: ${{ steps.cpr.outputs.pull-request-number }}
+      uses: actions/github-script@v9.0.0
+      with:
+        script: |
+          github.rest.pulls.merge({
+            owner: '${{ github.repository_owner }}',
+            repo: '${{ env.REPOSITORY_NAME }}',
+            pull_number: '${{ steps.cpr.outputs.pull-request-number }}',
+            sha: '${{ steps.cpr.outputs.pull-request-head-sha }}',
+            merge_method: 'merge'
+          })
