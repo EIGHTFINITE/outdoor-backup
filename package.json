@@ -44,9 +44,6 @@
     "lodash.isinteger",
     "lodash.isstring",
     "ms",
-    "spdx-exceptions",
-    "spdx-expression-parse",
-    "spdx-license-ids",
     "top-user-agents"
   ]
 }
