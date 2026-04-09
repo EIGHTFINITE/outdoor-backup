@@ -1,0 +1,9 @@
+/.gitattributes
+/.gitconfig
+/.gitignore
+/.gitmodules
+/.npmignore
+/.npmrc
+/.nsprc
+/.github/
+/index.bat
