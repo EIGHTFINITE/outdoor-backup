@@ -103,7 +103,7 @@ if(process.versions.electron) {
 			width: 1920,
 			height: 969,
 			frame: false,
-			show: true,
+			show: false,
 			webPreferences: {
 				session: browserSession, // Use same session given to Extensions class
 				sandbox: true, // Required for extension preload scripts
@@ -240,11 +240,12 @@ if(process.versions.electron) {
 		const pageLists = async () => {
 			const pages = Object.entries(pagelist.pages);
 			for (let i = 0; i < pages.length; i++) {
-				console.log(pages[i][0]);
 				await browserWindow.loadURL(pages[i][0])
-				//console.log(pages[i][1]);
+				await browserWindow.webContents.executeJavaScript(`[...document.querySelectorAll('a[href]')].map(a => a.href)`).then((result) => {
+					console.log(result)
+				})
 			}
-			//browserWindow.close()
+			browserWindow.close()
 		}
 		pageLists()
 
