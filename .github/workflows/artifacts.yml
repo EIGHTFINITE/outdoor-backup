@@ -1,0 +1,159 @@
+name: "Artifacts"
+
+on:
+  push:
+    branches: [ master ]
+  schedule:
+    - cron: '0 */12 * * *'
+
+permissions: write-all
+
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6.0.2
+    - name: Artifacts
+      shell: bash
+      run: |
+        bash --noprofile --norc -e -o pipefail .github/workflows/git-config.sh
+        git fetch --depth 1 origin +refs/tags/artifacts:refs/tags/artifacts --no-tags
+        bash --noprofile --norc -e -o pipefail .github/workflows/actions-artifacts.sh
+        export GIT_AUTHOR_DATE="$(git log -1 --format=%aD)"
+        export GIT_COMMITTER_DATE="$(git log -1 --format=%cD)"
+        echo "/index.bat export-ignore" >> .gitattributes
+        git add .gitattributes
+        git -c user.name="GitHub" -c user.email="noreply@github.com" commit --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" -m"Add vendored Node modules
+        
+        Node modules and their dependencies updated to the latest versions found in https://github.com/${{ github.repository }}/blob/master/package.json" | sed -n 1p
+        git checkout -- '.gitignore'
+        if [[ $(git status --porcelain | tee /dev/stderr | head -c1 | wc -c) -ne 0 || $(git clean -dffx | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+        
+        # Artifacts
+        git tag -f artifacts
+        git push -f origin refs/tags/artifacts:refs/tags/artifacts
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  automated_files:
+    runs-on: ubuntu-latest
+    needs: artifacts
+    if: needs.artifacts.result == 'success'
+    steps:
+    - uses: actions/checkout@v6.0.2
+    - name: Files
+      shell: bash
+      run: |
+        bash --noprofile --norc -e -o pipefail .github/workflows/git-config.sh
+        git fetch --depth 1 origin +refs/tags/artifacts:refs/tags/artifacts --no-tags
+        git restore --source=artifacts -- bin/ extensions/ node_modules/ package-lock.json
+        node_version=$(cat package.json | python -c "import sys, json; print(json.load(sys.stdin)['engines']['node'])")
+        sed -i "0,/\"npm\": \".*\"/s//\"npm\": \"$(cat bin/linux/x64/node/node-v$node_version-linux-x64/lib/node_modules/npm/package.json | python -c "import sys, json; print(json.load(sys.stdin)['version'])")\"/" package.json
+        git add package.json
+        git -c user.name="GitHub" -c user.email="noreply@github.com" commit --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" -m"Update engines" | sed -n 1p || true
+        sed -i -z 's|  "bundleDependencies": \[\n    ".*"\n  \]|  "bundleDependencies": \[\n'"$(printf '    "%s",\\n' $(find node_modules/ -mindepth 2 -maxdepth 3 -type f -name 'package.json' -exec bash -c 'path={}; echo "${path:13:-13}"' ';' | sort) | sed '$ s/...$//')"'\n  \]|' -- 'package.json'
+        git add package.json
+        git -c user.name="GitHub" -c user.email="noreply@github.com" commit --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" -m"Update bundleDependencies" | sed -n 1p || true
+        rm -r bin/
+        rm -r extensions/
+        rm -r node_modules/
+        rm package-lock.json
+        if [[ $(git status --porcelain | tee /dev/stderr | head -c1 | wc -c) -ne 0 || $(git clean -dffx | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+        return_commit="$(git log -1 --format=%H)"
+        git -c user.name="GitHub" -c user.email="noreply@github.com" rebase refs/tags/artifacts 2>/dev/null || true
+        git checkout refs/tags/artifacts -- .gitattributes
+        git -c user.name="GitHub" -c user.email="noreply@github.com" rebase --continue || true
+        git tag -f artifacts
+        git push -f origin refs/tags/artifacts:refs/tags/artifacts
+        if [[ $(git status --porcelain | tee /dev/stderr | head -c1 | wc -c) -ne 0 || $(git clean -dffx | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+        git reset --hard $return_commit
+        if [[ $(git status --porcelain | tee /dev/stderr | head -c1 | wc -c) -ne 0 || $(git clean -dffx | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+    - id: cpr
+      uses: peter-evans/create-pull-request@v8.1.1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Update README
+        author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+        committer: GitHub <noreply@github.com>
+        title: Automated update
+        body: |
+          Update files in the repository to reflect the latest changes.
+        labels: automerge
+        branch: actions/files
+        base: master
+    - name: get repository name
+      if: ${{ steps.cpr.outputs.pull-request-number }}
+      shell: bash
+      run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+    - name: automerge
+      if: ${{ steps.cpr.outputs.pull-request-number }}
+      uses: actions/github-script@v9.0.0
+      with:
+        script: |
+          github.rest.pulls.merge({
+            owner: '${{ github.repository_owner }}',
+            repo: '${{ env.REPOSITORY_NAME }}',
+            pull_number: '${{ steps.cpr.outputs.pull-request-number }}',
+            sha: '${{ steps.cpr.outputs.pull-request-head-sha }}',
+            merge_method: 'merge'
+          })
+  artifacts_jsonlint:
+    runs-on: ubuntu-latest
+    needs: artifacts
+    if: needs.artifacts.result == 'success'
+    steps:
+    - uses: actions/setup-python@v6.2.0
+      with:
+        python-version: '3.11'
+    - name: Build demjson
+      shell: bash
+      run: |
+        python -c "import sys; print(sys.version)"
+        curl -sSo pip.pyz https://bootstrap.pypa.io/pip/zipapp/pip-25.2.pyz
+        python pip.pyz -V
+        python pip.pyz install setuptools==57.5.0 wheel==0.45.1
+        python pip.pyz install git+https://github.com/EIGHTFINITE/demjson.git@master
+        rm pip.pyz
+    - uses: actions/checkout@v6.0.2
+      with:
+        ref: artifacts
+    - name: jsonlint
+      shell: bash
+      run: |
+        node_version=$(cat package.json | python -c "import sys, json; print(json.load(sys.stdin)['engines']['node'])")
+        # Forbid all
+        if [[ $(find . -type f -path ./.git -prune -o -path ./package-lock.json -prune -o -path ./bin/windows/x64/node/node-v$node_version-win-x64/package-lock.json -prune -o -path ./bin/linux/x64/node/node-v$node_version-linux-x64/lib/package-lock.json -prune -o -path ./bin/linux/x64/node/node-v$node_version-linux-x64/lib/node_modules/npm/node_modules/iconv-lite/encodings/tables -prune -o -path ./bin/windows/x64/node/node-v$node_version-win-x64/node_modules/npm/node_modules/iconv-lite/encodings/tables -prune -o -path ./extensions/uBlock0.chromium/assets/assets.json -prune -o -name '*.json' -exec jsonlint -s --forbid any-type-at-start,bom,duplicate-keys,non-portable,non-bmp,zero-byte -e utf8 -- '{}' ';' | grep -v -e ': ok' -e ': has errors' | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+        # Allow non-portable
+        if [[ $(find ./package-lock.json ./bin/windows/x64/node/node-v$node_version-win-x64/package-lock.json ./bin/linux/x64/node/node-v$node_version-linux-x64/lib/package-lock.json -type f -name '*.json' -exec jsonlint -s --allow non-portable --forbid any-type-at-start,bom,duplicate-keys,non-bmp,zero-byte -e utf8 -- '{}' ';' | grep -v -e ': ok' -e ': has errors' | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+        # Allow non-bmp
+        if [[ $(find ./extensions/uBlock0.chromium/assets/assets.json -type f -name '*.json' -exec jsonlint -s --allow non-bmp --forbid any-type-at-start,bom,duplicate-keys,non-portable,zero-byte -e utf8 -- '{}' ';' | grep -v -e ': ok' -e ': has errors' | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+        # Allow non-bmp, zero-byte
+        if [[ $(find ./bin/linux/x64/node/node-v$node_version-linux-x64/lib/node_modules/npm/node_modules/iconv-lite/encodings/tables ./bin/windows/x64/node/node-v$node_version-win-x64/node_modules/npm/node_modules/iconv-lite/encodings/tables -type f -name '*.json' -exec jsonlint -s --allow non-bmp,zero-byte --forbid any-type-at-start,bom,duplicate-keys,non-portable -e utf8 -- '{}' ';' | grep -v -e ': ok' -e ': has errors' | tee /dev/stderr | head -c1 | wc -c) -ne 0 ]]
+          then exit 1
+        fi
+  artifacts_audit:
+    runs-on: ubuntu-latest
+    needs: [automated_files]
+    if: ${{ needs.automated_files.result == 'success' }}
+    steps:
+    - uses: actions/checkout@v6.0.2
+      with:
+        ref: artifacts
+    - name: audit
+      shell: bash
+      run: |
+        bash --noprofile --norc -e -o pipefail .github/workflows/git-config.sh
+        bash --noprofile --norc -e -o pipefail .github/workflows/actions-audit.sh

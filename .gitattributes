@@ -1,0 +1,41 @@
+* text=false
+/.gitattributes text working-tree-encoding=UTF-8 eol=lf
+/.gitignore text working-tree-encoding=UTF-8 eol=lf
+/.gitmodules text working-tree-encoding=UTF-8 eol=lf
+/.npmignore text working-tree-encoding=UTF-8 eol=lf
+/.npmrc text working-tree-encoding=UTF-8 eol=lf
+/.nsprc text working-tree-encoding=UTF-8 eol=lf
+/pagelist.json text working-tree-encoding=UTF-8 eol=lf
+/index.bat text working-tree-encoding=UTF-8 eol=crlf
+/index.js text working-tree-encoding=UTF-8 eol=lf
+/package.json text working-tree-encoding=UTF-8 eol=lf
+/package-lock.json text working-tree-encoding=UTF-8 eol=lf
+/.github/*.json text working-tree-encoding=UTF-8 eol=lf
+/.github/*.md text working-tree-encoding=UTF-8 eol=lf
+/.github/*.sh text working-tree-encoding=UTF-8 eol=lf
+/.github/*.yml text working-tree-encoding=UTF-8 eol=lf
+/lib/*.js text working-tree-encoding=UTF-8 eol=lf
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.gitmodules export-ignore
+/.npmignore export-ignore
+/.npmrc export-ignore
+/.nsprc export-ignore
+/index.js export-ignore
+/package-lock.json export-ignore
+/package.json export-ignore
+/.github/ export-ignore
+/bin/linux/ export-ignore
+/bin/windows/x64/7z/ export-ignore
+/bin/windows/x64/electron/ export-ignore
+/bin/windows/x64/node/ export-ignore
+/extensions/ export-ignore
+/lib/ export-ignore
+/node_modules/ export-ignore
+/.github/ linguist-vendored
+/.github/* linguist-vendored
+/bin/ linguist-generated
+/bin/* linguist-generated
+/node_modules/ linguist-generated
+/node_modules/* linguist-generated
+/package-lock.json linguist-generated
