@@ -3935,7 +3935,9 @@
     "https://www.outdoorsportshop.nl/a-60694280/kasten/keukenkast-jardin/": {
       "status": 200
     },
-    "https://www.outdoorsportshop.nl/a-61153970/mummymodel-lichtgewicht-slaapzakken/agemore-elektrische-allseason-slaapzak/": {},
+    "https://www.outdoorsportshop.nl/a-61153970/mummymodel-lichtgewicht-slaapzakken/agemore-elektrische-allseason-slaapzak/": {
+      "status": 404
+    },
     "https://www.outdoorsportshop.nl/a-61297238/kooktoestellen/apg-jetboil-kooksysteem-1400-ml/": {
       "status": 200
     },

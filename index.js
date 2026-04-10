@@ -285,6 +285,7 @@ if(process.versions.electron) {
 							if(!pagelist.images.includes(results[j])) {
 								pagelist.images.push(results[j])
 							}
+							continue
 						}
 						if(!results[j].startsWith('https://www.outdoorsportshop.nl/')) {
 							// External
@@ -293,17 +294,15 @@ if(process.versions.electron) {
 							}
 							continue
 						}
-						else {
-							// Webpage
-							if(results[j].startsWith('https://www.outdoorsportshop.nl/cart/')) {
-								// Cart
-								results[j] = new URL(results[j]);
-								results[j].search = '';
-								results[j] = results[j].toString();
-							}
-							if(!Object.hasOwn(pagelist.pages, results[j])) {
-								pagelist.pages[results[j]] = {}
-							}
+						// Webpage
+						if(results[j].startsWith('https://www.outdoorsportshop.nl/cart/')) {
+							// Cart
+							results[j] = new URL(results[j]);
+							results[j].search = '';
+							results[j] = results[j].toString();
+						}
+						if(!Object.hasOwn(pagelist.pages, results[j])) {
+							pagelist.pages[results[j]] = {}
 						}
 					}
 				})
