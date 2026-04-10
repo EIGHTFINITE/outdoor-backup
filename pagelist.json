@@ -14,7 +14,6 @@
     "https://www.lamainscampingshow.nl/",
     "https://www.fin-outdoor.com/nl/",
     "https://www.smederijzwartenkot.nl/",
-    "https://www.mijnwebwinkel.nl/winkel/outdoorsportshop/c-4100041/adventure-food-buitensport-eten/",
     "https://www.consuwijzer.nl/thema/garantie",
     "https://www.consuwijzer.nl/elektronica/ontevreden-over-aankoop/rechten-bij-product-dat-niet-goed-ondeugdelijk-is",
     "https://www.consuwijzer.nl/vervoer/garantie-op-vervoermiddel/europese-garantie-en-nederlands-recht-op-deugdelijk-product",
@@ -3044,29 +3043,8 @@
     "https://www.outdoorsportshop.nl/a-49514299/handbogen/man-kung-mk-ncb75bk-fossil-compound-bow/": {
       "status": 200
     },
-    "https://www.outdoorsportshop.nl/a-49514341/handbogen/man-kung-mk-cb75b-kit/": {
-      "status": 404
-    },
-    "https://www.outdoorsportshop.nl/a-49514375/handbogen/man-kung-mk-cba1/": {
-      "status": 404
-    },
     "https://www.outdoorsportshop.nl/a-49514456/pistool-kruisboog/man-kung-mk-80a4al-recurve-pistoolkruisboog/": {
       "status": 200
-    },
-    "https://www.outdoorsportshop.nl/a-49517312/kruisbogen/man-kung-mk-120/": {
-      "status": 404
-    },
-    "https://www.outdoorsportshop.nl/a-49517490/kruisbogen/man-kung-mk-250a1b/": {
-      "status": 404
-    },
-    "https://www.outdoorsportshop.nl/a-49517515/kruisbogen/man-kung-mk-250a1w/": {
-      "status": 404
-    },
-    "https://www.outdoorsportshop.nl/a-49517541/kruisbogen/man-kung-mk-300b/": {
-      "status": 404
-    },
-    "https://www.outdoorsportshop.nl/a-49517567/kruisbogen/man-kung-mk-300ac/": {
-      "status": 404
     },
     "https://www.outdoorsportshop.nl/a-49517790/blaaspijp-pro/coldsteel-bamboo-dart/": {
       "status": 200
@@ -3934,9 +3912,6 @@
     },
     "https://www.outdoorsportshop.nl/a-60694280/kasten/keukenkast-jardin/": {
       "status": 200
-    },
-    "https://www.outdoorsportshop.nl/a-61153970/mummymodel-lichtgewicht-slaapzakken/agemore-elektrische-allseason-slaapzak/": {
-      "status": 404
     },
     "https://www.outdoorsportshop.nl/a-61297238/kooktoestellen/apg-jetboil-kooksysteem-1400-ml/": {
       "status": 200
