@@ -250,7 +250,9 @@ if(process.versions.electron) {
 					document.querySelectorAll('#webkit-xml-viewer-source-xml').length,
 					!document.querySelectorAll('.intro.rte_content').length,
 					document.querySelectorAll('.overviewOptions').length,
-					[...document.querySelectorAll('.navigation .active > :not(ul)')].map(a => a.innerText.trim())
+					[...document.querySelectorAll('.navigation .active > :not(ul)')].map(a => a.innerText.trim()),
+					document.querySelector('.intro.rte_content h1')?.innerText,
+					document.querySelector('.article h1.product-title')?.innerText
 				]`).then((results) => {
 					const responseStatus = results[1]
 					const isImage = results[2]
@@ -258,6 +260,8 @@ if(process.versions.electron) {
 					const isProduct = results[4]
 					const isCategory = results[5]
 					const currentCategories = results[6]
+					const pageTitle = results[7]
+					const productTitle = results[8]
 					results = results[0]
 					// Current page
 					pagelist.pages[pages[i][0]].status = responseStatus;
@@ -273,13 +277,17 @@ if(process.versions.electron) {
 					}
 					if(isProduct) {
 						pagelist.pages[pages[i][0]].type = 'product'
+						pagelist.pages[pages[i][0]].title = productTitle
+						pagelist.pages[pages[i][0]].categories = currentCategories
 					}
 					else if(isCategory) {
 						pagelist.pages[pages[i][0]].type = 'category'
+						pagelist.pages[pages[i][0]].title = pageTitle
 						pagelist.pages[pages[i][0]].categories = currentCategories
 					}
 					else {
 						pagelist.pages[pages[i][0]].type = 'page'
+						pagelist.pages[pages[i][0]].title = pageTitle
 					}
 					// Outgoing links
 					if(results.length < 1) {
