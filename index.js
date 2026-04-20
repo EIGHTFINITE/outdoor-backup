@@ -248,14 +248,14 @@ if(process.versions.electron) {
 					window.performance.getEntries().find(e => e.entryType === 'navigation').responseStatus,
 					(document.querySelectorAll('body>*').length === 1 && document.querySelectorAll('body>img').length),
 					document.querySelectorAll('#webkit-xml-viewer-source-xml').length,
-					document.querySelectorAll('.intro.rte_content').length,
+					!document.querySelectorAll('.intro.rte_content').length,
 					document.querySelectorAll('.overviewOptions').length,
 					[...document.querySelectorAll('.navigation .active > :not(ul)')].map(a => a.innerText.trim())
 				]`).then((results) => {
 					const responseStatus = results[1]
 					const isImage = results[2]
 					const isXmlViewer = results[3]
-					const isProduct = !results[4]
+					const isProduct = results[4]
 					const isCategory = results[5]
 					const currentCategories = results[6]
 					results = results[0]
@@ -276,6 +276,7 @@ if(process.versions.electron) {
 					}
 					else if(isCategory) {
 						pagelist.pages[pages[i][0]].type = 'category'
+						pagelist.pages[pages[i][0]].categories = currentCategories
 					}
 					else {
 						pagelist.pages[pages[i][0]].type = 'page'
@@ -331,7 +332,7 @@ if(process.versions.electron) {
 							if(!Array.isArray(pagelist.pages[pages[i][0]].images)) {
 								pagelist.pages[pages[i][0]].images = []
 							}
-							if(!pagelist.pages[pages[i][0]].images.includes(results[j])) {
+							if(!pagelist.pages[pages[i][0]].images.includes(results[j]) && (!isCategory || !results[j].startsWith('https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/'))) {
 								pagelist.pages[pages[i][0]].images.push(results[j])
 							}
 							continue
