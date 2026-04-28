@@ -33,8 +33,8 @@
     "https://cdn.myonlinestore.eu/94881a4c-6be1-11e9-a722-44a8421b9960/images/logo2.jpg"
   ],
   "config": {
-    "p7zip-short": "2600",
-    "p7zip-version": "26.00",
+    "p7zip-short": "2601",
+    "p7zip-version": "26.01",
     "portable-git-short": "2.54.0",
     "portable-git-version": "2.54.0.windows.1",
     "ublock-origin-version": "1.70.0"
