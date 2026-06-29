@@ -81,7 +81,11 @@
         "https://cdn.myonlinestore.eu/94881a4c-6be1-11e9-a722-44a8421b9960/images/_DSC0321-Edit.jpg",
         "https://cdn.myonlinestore.eu/94881a4c-6be1-11e9-a722-44a8421b9960/images/Foodforceshop_logo.png",
         "https://cdn.myonlinestore.eu/94881a4c-6be1-11e9-a722-44a8421b9960/images/36efeeaa6bec15ba92a843151a31da9d3e8c2fdb.jpg",
-        "https://cdn.myonlinestore.eu/94881a4c-6be1-11e9-a722-44a8421b9960/images/Bear-Creek.gif"
+        "https://cdn.myonlinestore.eu/94881a4c-6be1-11e9-a722-44a8421b9960/images/Bear-Creek.gif",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b1b3b6b97441862b1852470410e3b5956f945581.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/94df54f60befe5d9c9f5961b6c9b8dc195608a5f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/10a2683f4db78c1fbb8f4ce2c58ccc8bff91278f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/3572e81a26216cc60d9b73260e2720daf48ea60a.jpg"
       ],
       "status": 200,
       "title": "Home",
@@ -370,7 +374,8 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b27bc5dd59519acf0f8ff960030f8bb8bbb5c2d0.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8c60f81c3942bdfc1ef2f8ac455e358a83b4a88b.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e3db2d580ba5818c9cf7608f6d9d84c410b96001.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ae4f202cfc538be30acf3a2908980e4a0d0e3512.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ae4f202cfc538be30acf3a2908980e4a0d0e3512.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/3572e81a26216cc60d9b73260e2720daf48ea60a.jpg"
       ],
       "status": 200,
       "title": "Bell Tent 4 meter TC Katoen",
@@ -1722,6 +1727,21 @@
       "title": "Tambu Ofra Lichtgewicht Mummy Slaapzak",
       "type": "product"
     },
+    "https://www.outdoorsportshop.nl/a-124340523/trekkers-rugzakken/mountain-guide-55-ltr-active-leisure/": {},
+    "https://www.outdoorsportshop.nl/a-124434913/stoelen/ultralichte-campingstoel-nils-first-zwart/": {},
+    "https://www.outdoorsportshop.nl/a-124434998/stretcher-ligbedden/nils-premium-opvouwbaar-campingbed/": {},
+    "https://www.outdoorsportshop.nl/a-124435103/stretcher-ligbedden/veldbed-cannes-l-eurotrail/": {},
+    "https://www.outdoorsportshop.nl/a-124435158/pannensets/nils-camping-pannenset-2-3-persoons/": {},
+    "https://www.outdoorsportshop.nl/a-124435173/pannensets/nils-camping-pannenset-2-3-persoons/": {},
+    "https://www.outdoorsportshop.nl/a-124435353/kampeer-nood-verlichting/nils-campinglamp-oplaadbaar/": {},
+    "https://www.outdoorsportshop.nl/a-124521573/kruisbogen/man-kung-mk-xb56bk-frost-wolf-compound-crossbow/": {},
+    "https://www.outdoorsportshop.nl/a-126222253/nautic-waterdichte-tassen/nils-waterdichte-tas-backpack-25-liter/": {},
+    "https://www.outdoorsportshop.nl/a-126885179/luchtbedden/king-size-2-persoons-luchtbed-met-elektrische-pomp-nils/": {},
+    "https://www.outdoorsportshop.nl/a-126885464/luchtbedden/nils-2-persoons-luchtbed-xxl-203-x-152/": {},
+    "https://www.outdoorsportshop.nl/a-127384254/bipods/vector-optics-rokstad-fma-4-4-9-2-pan-tilt-bipod/": {},
+    "https://www.outdoorsportshop.nl/a-127565599/stretcher-ligbedden/campingbed-opvouwbaar-blue-nils/": {},
+    "https://www.outdoorsportshop.nl/a-127565844/stretcher-ligbedden/campingbed-opklapbaar-groen-200-cm-nils/": {},
+    "https://www.outdoorsportshop.nl/a-127565884/stretcher-ligbedden/ultra-light-campingbed-grijs-nils/": {},
     "https://www.outdoorsportshop.nl/a-49454509/adventure-food/expedition-breakfast/": {
       "categories": [
         "Outdoor & Bushcraft",
@@ -2375,38 +2395,6 @@
       "title": "Brocas QSS Eurotrail",
       "type": "product"
     },
-    "https://www.outdoorsportshop.nl/a-49530849/stretcher-ligbedden/belmont-ligbed/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Kampeermeubilair",
-        "Stretcher / Ligbedden"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/bc2bdf316580831b5b51b678e442fc81e6e51212.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/71ac791d214b7fd8e0b23a91bd1c4c05ffcb30d5.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/72b6a29c5b792125f878a9dfe2d6a3342771c0e3.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0a88ffe551380c2137d7fa34ae970b602f95af1f.jpg"
-      ],
-      "status": 200,
-      "title": "Belmont Ligbed",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49530977/stretcher-ligbedden/metz-eurotrail/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Kampeermeubilair",
-        "Stretcher / Ligbedden"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a24a6804aa772f084686913f5f2ed902cd5210cc.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/3b620bf995b66e9568d680e8c2183ae8562259ef.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b8938b207bb006b659cbae4151bceb11bf57d1ea.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0a88ffe551380c2137d7fa34ae970b602f95af1f.jpg"
-      ],
-      "status": 200,
-      "title": "Metz Eurotrail",
-      "type": "product"
-    },
     "https://www.outdoorsportshop.nl/a-49534084/workers/pilot-werkjack-terratrend/": {
       "categories": [
         "Kleding",
@@ -3041,7 +3029,8 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c6791fff0d0b96e48b2e954aa84ea7959f96850e.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/60c4f5e451c1abe8834a352d6c1747493afc5ac4.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/7742a17fae74d038ae49593ed1311b31497f8c86.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9994ba100648f8afa8fe914c34c101a1ce8f6f52.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9994ba100648f8afa8fe914c34c101a1ce8f6f52.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a1e6a5d9bccdd81395507e02c00767c270649e54.jpg"
       ],
       "status": 200,
       "title": "Pasta alle Noci ( Vegetarisch )",
@@ -3353,141 +3342,6 @@
       ],
       "status": 200,
       "title": "Walking Hipbag Active Leisure",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49598374/trekkers-rugzakken/equinox-75-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ebe9f1b9d1110c9970fbb0296583747020e113dc.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/49f031fca13fa8208eaf7e53c807efd6b98e3207.jpg"
-      ],
-      "status": 200,
-      "title": "Equinox 75 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49598479/trekkers-rugzakken/mountain-guide-70-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/97b01e0a1dfee369caf7c8c2353d57d8c9fce752.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/4e2afdf650f518ead61deac2912e24ad15e0e086.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/49487ffa185b60e419886f21d3b13f9de671d35b.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Mountain Guide 70 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49598511/trekkers-rugzakken/nepal-55-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1c7fbd2cf7f8c699232c3eb37b3279820db18ad5.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Nepal 55 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49598558/trekkers-rugzakken/nepal-70-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1c7fbd2cf7f8c699232c3eb37b3279820db18ad5.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Nepal 70 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49599038/trekkers-rugzakken/tahoma-55-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8b9a357800062b0f221956ce19532457dc126a3d.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1085f6d1726e4edd2c13a2e63facb664f6facf9b.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Tahoma 55 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49599153/trekkers-rugzakken/tahoma-75-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8b9a357800062b0f221956ce19532457dc126a3d.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1085f6d1726e4edd2c13a2e63facb664f6facf9b.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Tahoma 75 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49599328/trekkers-rugzakken/blackburn-65-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a2fa846b05121023daf3fabe51ef696fab2ae696.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e83256e4193c6b2ebc80d6024a3e1d87d26c97ae.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/dfe3c909ae44c7bff26b0236fb0e0e348dce2105.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Blackburn 65 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49599449/trekkers-rugzakken/hawk-rs-55-10-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e58afdb9b9a5169089224f271065d7bd37c730a1.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/64ef10bf15f754f58962dffb328e7dd4a8f3659e.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/dc24a967fe186846e7d868065357cf0ac2ff38e1.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Hawk RS 55+10 Active Leisure Trekking Rugzak",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-49599527/trekkers-rugzakken/hawk-rs-70-10-active-leisure-trekking-rugzak/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Rugzakken & Tassen",
-        "Trekkers Rugzakken"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e58afdb9b9a5169089224f271065d7bd37c730a1.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/dc24a967fe186846e7d868065357cf0ac2ff38e1.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dde4b3bea097845acc6e6b047488a1f6aeeac0b.jpg"
-      ],
-      "status": 200,
-      "title": "Hawk RS 70+10 Active Leisure Trekking Rugzak",
       "type": "product"
     },
     "https://www.outdoorsportshop.nl/a-49600271/dagrugzakken-heuptassen/basic-hipbag/": {
@@ -6107,7 +5961,8 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8d449265d89124605d10e97ceb4e69862ed9ee9f.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/533dfb6ec2547f5ed732db4f7698fbe9ea48483d.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/6bdc13740f54007089f28e4c103f2c2ed47792cd.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c6791fff0d0b96e48b2e954aa84ea7959f96850e.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c6791fff0d0b96e48b2e954aa84ea7959f96850e.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b4a166ffcbaa367e0b25193b7fdb7f02448fe506.jpg"
       ],
       "status": 200,
       "title": "Knusper-Müsli, Muesli Krokant",
@@ -6304,7 +6159,13 @@
       "images": [
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a20260ebbda6309c224167d2c76727618fa99506.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/07cf3e1b4d9608a0246622d5d7f56a724aa39a19.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0bbc8db4f59f0b828198ddd26acee747d47866bb.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0bbc8db4f59f0b828198ddd26acee747d47866bb.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8209b8a2ceea380dcd315669ffab1caeb7b9e1f6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b13cfb9e8098b77cae31ac0b00cc802f56cdce52.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dbd1a82cb3931190c817e593091a84685cd19e5.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/25f17fcc3a6f9e6685918420de8611cc463280f1.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/4d6b9909d01e0cddcfa1899dad19808e843ae43e.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1113a35d7c89e05dbde4ce4631f01d8caf84a876.jpg"
       ],
       "status": 200,
       "title": "Solar Shower, Zonnedouche Waterzak",
@@ -7645,24 +7506,6 @@
       ],
       "status": 200,
       "title": "Firestorm Multifuel Brander/Kooktoestel",
-      "type": "product"
-    },
-    "https://www.outdoorsportshop.nl/a-71919028/solar-panel-zonnepaneel/21-watt-solar-panel-opvouwbaar-zonnepaneel-opvouwbaar/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Verlichting",
-        "Solar Panel / Zonnepaneel"
-      ],
-      "images": [
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f7295f857c5ffe9947fa32b72ef64c2925a3c30f.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/3e64fb318daead5ae5e8171a365038e30b0da307.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ccfac9d7761300c3190b8bd588861dca8fbebf37.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8ef980732167884e46bc763c1fec41205bfb4f2c.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/251f01ba7f49c5fd8997f7f685fbadea4454b20c.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ee8f3e2a549a7ba1fc28b06f17b02edf10bdfadd.jpg"
-      ],
-      "status": 200,
-      "title": "21 Watt Solar Panel Opvouwbaar, Zonnepaneel Opvouwbaar",
       "type": "product"
     },
     "https://www.outdoorsportshop.nl/a-71944021/noodrantsoenen-accessoires/trek-n-eat-kruidenshaker-6-vakken-gevuld/": {
@@ -10081,12 +9924,20 @@
       "images": [
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d93b31e07d23f439798378984640a3c7b6164f4c.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/bd1bd29557ac1a42123bbddd4eeeef51e0a43661.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d32d2b8122390c246a217943c79ce83fab2fd15c.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d32d2b8122390c246a217943c79ce83fab2fd15c.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e58e057983870cbc5571f385b67544d6bc2844f6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2c88cae61c165a28e4034e7018d40dd4df8f782c.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/cccae8a9e4c89658d4179688b920b7f9f2d14b12.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2b5c48b2fbb768d594b40cba6877b0a64d0801c6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/71aa7699dd32b5bbaff941165df37881bdcc71cb.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/faddac01fc4b72c2d90afc7b82de682bf9053483.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/4650b970333680f15b33256af238e66a899b932d.jpg"
       ],
       "status": 200,
-      "title": "Vector X-ACCU 30mm Adjustable Elevation Picatinny Rings XASR-3040",
+      "title": "Vector X-ACCU 30mm Adjustable Elevation Picatinny Rings XASR-3041",
       "type": "product"
     },
+    "https://www.outdoorsportshop.nl/a-89607779/scope-montage/vector-x-accu-30mm-adjustable-elevation-picatinny-rings-xasr-3041/": {},
     "https://www.outdoorsportshop.nl/a-89610332/bipods/ram-bipod-atlas-style/": {
       "categories": [
         "Boog & Schietsport",
@@ -10824,12 +10675,24 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2c1016881853658997267feb2c70656980c59b37.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e1e1cdce346847cfe3c34ebf38d1cf0b29a93c71.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e030587763681af3408c39d2defa03e37fa00508.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/72d641443347c32c43c557bf39b7900402dd262b.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/72d641443347c32c43c557bf39b7900402dd262b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/3572e81a26216cc60d9b73260e2720daf48ea60a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d9d3e6acd103c6d97b814449449985d76045f60b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b6544bc7938ff685d53ff5b24fa2f01f16478284.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/38773fce1b0e8c085fe6f49cac05f253ac331766.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1bbedce07bae73eaee94c268153c3dd366a95bf2.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e896654b65e28259deccb6efabbffff537a81f7b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/345418a544390e5e313a2e6f60bbde2a5b183cca.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/36571c8a2cab729913b2eb650ee42bff4c2547d1.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/58d1c09e30c9c6d6685fca926679a7abfbe5c1a7.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/6f719b94e1f7f8e120d6573d4bec220116782078.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a708397ae93f8205921a289d0e0a891708ee47d2.jpg"
       ],
       "status": 200,
-      "title": "Fire Storm Tent Kachel/Stove RVS",
+      "title": "Wizz Fire Tent Kachel/Stove RVS",
       "type": "product"
     },
+    "https://www.outdoorsportshop.nl/a-97827027/tent-kachel-stove/wizz-fire-tent-kachel-stove-rvs/": {},
     "https://www.outdoorsportshop.nl/a-97892304/brandstof/optimus-gasblik-4-seizoenen-230-gram/": {
       "categories": [
         "Kampeerartikelen",
@@ -11202,7 +11065,8 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d8e08358342c1750292acadbab9029550959afc7.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/35bbdf193198d49da84b6f88a1c3193e2b5e7410.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/077981a01dbf36865f6763f8691407346a8531d3.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/def84e059b1ed6cb932447d90c5d12b86b5c17ce.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/def84e059b1ed6cb932447d90c5d12b86b5c17ce.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b1b3b6b97441862b1852470410e3b5956f945581.jpg"
       ],
       "status": 200,
       "title": "Kampeerartikelen",
@@ -11423,7 +11287,9 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/af31e35884cee5d4a2fad0b60c63c2b94d654bc2.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8c3839648579c8d62d1f6cb69995e3a254770503.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e40f60a851da2fbe8d1f706a2ba770530041795a.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a24a6804aa772f084686913f5f2ed902cd5210cc.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a24a6804aa772f084686913f5f2ed902cd5210cc.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b1b3b6b97441862b1852470410e3b5956f945581.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/10a2683f4db78c1fbb8f4ce2c58ccc8bff91278f.jpg"
       ],
       "status": 200,
       "title": "Kampeermeubilair",
@@ -11456,7 +11322,8 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/87ca1437985aeb7b0e913a55d0fb6201b37bd11f.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c649e447cb197b75e05e330b8fec03ff54ed49ac.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/efaec122709742cbc2c781c3c97484b077504ed8.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8984657ee46f24943bb43397640de7caa2f4411e.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8984657ee46f24943bb43397640de7caa2f4411e.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/94df54f60befe5d9c9f5961b6c9b8dc195608a5f.jpg"
       ],
       "status": 200,
       "title": "Koken & Accessoires",
@@ -12145,7 +12012,8 @@
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f2e90466a98b2992832f70836f98f06ef0c5713f.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/928753bd610bbc9b349aae91df7d6ab2453056cd.jpg",
         "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/efaec122709742cbc2c781c3c97484b077504ed8.jpg",
-        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1a2c098a134d4974e79c47ffc98fa8ae8ffc7a11.jpg"
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1a2c098a134d4974e79c47ffc98fa8ae8ffc7a11.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/94df54f60befe5d9c9f5961b6c9b8dc195608a5f.jpg"
       ],
       "status": 200,
       "title": "Koken & Accessoires",
@@ -12378,17 +12246,6 @@
       "title": "Noodrantsoenen & Accessoires",
       "type": "category"
     },
-    "https://www.outdoorsportshop.nl/c-6391627/solar-panel-zonnepaneel/": {
-      "categories": [
-        "Kampeerartikelen",
-        "Verlichting",
-        "Solar Panel / Zonnepaneel"
-      ],
-      "images": [],
-      "status": 200,
-      "title": "Solar Panel / Zonnepaneel",
-      "type": "category"
-    },
     "https://www.outdoorsportshop.nl/c-6482196/onderhoud/": {
       "categories": [
         "Tenten",
@@ -12554,6 +12411,7 @@
       ],
       "status": 200,
       "type": "product"
-    }
+    },
+    "https://www.outdoorsportshop.nl/withdrawal": {}
   }
 }
