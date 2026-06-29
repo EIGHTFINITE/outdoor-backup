@@ -1727,21 +1727,300 @@
       "title": "Tambu Ofra Lichtgewicht Mummy Slaapzak",
       "type": "product"
     },
-    "https://www.outdoorsportshop.nl/a-124340523/trekkers-rugzakken/mountain-guide-55-ltr-active-leisure/": {},
-    "https://www.outdoorsportshop.nl/a-124434913/stoelen/ultralichte-campingstoel-nils-first-zwart/": {},
-    "https://www.outdoorsportshop.nl/a-124434998/stretcher-ligbedden/nils-premium-opvouwbaar-campingbed/": {},
-    "https://www.outdoorsportshop.nl/a-124435103/stretcher-ligbedden/veldbed-cannes-l-eurotrail/": {},
-    "https://www.outdoorsportshop.nl/a-124435158/pannensets/nils-camping-pannenset-2-3-persoons/": {},
-    "https://www.outdoorsportshop.nl/a-124435173/pannensets/nils-camping-pannenset-2-3-persoons/": {},
-    "https://www.outdoorsportshop.nl/a-124435353/kampeer-nood-verlichting/nils-campinglamp-oplaadbaar/": {},
-    "https://www.outdoorsportshop.nl/a-124521573/kruisbogen/man-kung-mk-xb56bk-frost-wolf-compound-crossbow/": {},
-    "https://www.outdoorsportshop.nl/a-126222253/nautic-waterdichte-tassen/nils-waterdichte-tas-backpack-25-liter/": {},
-    "https://www.outdoorsportshop.nl/a-126885179/luchtbedden/king-size-2-persoons-luchtbed-met-elektrische-pomp-nils/": {},
-    "https://www.outdoorsportshop.nl/a-126885464/luchtbedden/nils-2-persoons-luchtbed-xxl-203-x-152/": {},
-    "https://www.outdoorsportshop.nl/a-127384254/bipods/vector-optics-rokstad-fma-4-4-9-2-pan-tilt-bipod/": {},
-    "https://www.outdoorsportshop.nl/a-127565599/stretcher-ligbedden/campingbed-opvouwbaar-blue-nils/": {},
-    "https://www.outdoorsportshop.nl/a-127565844/stretcher-ligbedden/campingbed-opklapbaar-groen-200-cm-nils/": {},
-    "https://www.outdoorsportshop.nl/a-127565884/stretcher-ligbedden/ultra-light-campingbed-grijs-nils/": {},
+    "https://www.outdoorsportshop.nl/a-124340523/trekkers-rugzakken/mountain-guide-55-ltr-active-leisure/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Rugzakken & Tassen",
+        "Trekkers Rugzakken"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f09d935c3cac38b0b2a324f86124277bb22d621d.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1c39ea10db02d34c23465a5edb35d47aa1c20271.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c00452f43c5791db8d1c8f9263f6d69800b1bf3a.jpg"
+      ],
+      "status": 200,
+      "title": "Mountain Guide 55 ltr Active Leisure",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-124434913/stoelen/ultralichte-campingstoel-nils-first-zwart/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Kampeermeubilair",
+        "Stoelen"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b1b3b6b97441862b1852470410e3b5956f945581.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d1a848479dec27206c589e1804200894133ff02b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/10856c883e6f6076febb662da61a17d66132c056.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/13f0fbd29c9133a80c3ea2ef4e9500a4e8e5cb98.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/231a115039c0f71bf7891e392a850f7d7613d54d.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/416052195fa2bde5a422661c3b4b97edb6c618db.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/27e38472d61a199a3781ff3c2d060471112e52ca.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c01b516bbf71ed564fc53fbabd4148bd08bffc0d.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2da0af87ec3c6bac5c9417817c045d4ed234260b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9de8a5ad3e600ff7826820715ad88d2b0fb4c082.jpg"
+      ],
+      "status": 200,
+      "title": "Ultralichte Campingstoel Nils First Zwart",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-124434998/stretcher-ligbedden/nils-premium-opvouwbaar-campingbed/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Kampeermeubilair",
+        "Stretcher / Ligbedden"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/10a2683f4db78c1fbb8f4ce2c58ccc8bff91278f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f1e2b031cffafa4efc545b7bba156f4cb982ae40.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/567f3906cb80cf414575fd539d00c6a986f1c941.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/755bd5b0b865d2927f3ae8ab18eb874ec4a6a9c6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/178b28ab30e404e15e297d4333219c1195785d1e.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/33aad56035411f97ecc931860450f32768222017.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/4492aa4667b5cdddf03933e4624e6a5dd514f176.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e0f279f811dc111348e0b929d0f9ef266880736a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c747196e4e773c03fb53b58ec07f072e0bdbf159.jpg"
+      ],
+      "status": 200,
+      "title": "Nils Premium Opvouwbaar Campingbed",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-124435103/stretcher-ligbedden/veldbed-cannes-l-eurotrail/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Kampeermeubilair",
+        "Stretcher / Ligbedden"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1de97c7c7d9ac96ed1a98ec7870f30eb5c647ebd.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/fc5ba90e6764779090906edb70f5aa42843f4de7.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/439e2238810264571ad1b814580297a8bc76afaf.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/edba3c14b27a102b7477b12204e0c55cd0295625.jpg"
+      ],
+      "status": 200,
+      "title": "Veldbed Cannes L Eurotrail",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-124435158/pannensets/nils-camping-pannenset-2-3-persoons/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Koken & Accessoires",
+        "Pannensets"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/94df54f60befe5d9c9f5961b6c9b8dc195608a5f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/808bfa70d75e60a111b7dff9fff3145254dc85cc.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0596060e63b30c3df668022acdf8532872e4454c.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/5c64f1582af36f22c71ef23e63216991c2a1064f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e5f56ddd05275b20900fee9e94e2db116032cbf2.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0fc8c75edbb38a9cd19309395f6f992183346335.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/14306abe98ce0e94a41414f9efb9390f9a23bf92.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/35bb0933167ca4112eb3f2f973e6fa8726e9513a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/cc9de8e8bd24df1b492ea8d751a47af589ef2d57.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f78c63a017f254635cf43b3ce70563c9b0e44078.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/6ea2de144b6a246d68eab523636317b2cc172571.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b7a01b57ed9cc8507208dafae258ce0716e824ef.jpg"
+      ],
+      "status": 200,
+      "title": "Nils Camping Pannenset 2-3 persoons",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-124435173/pannensets/nils-camping-pannenset-2-3-persoons/": {
+      "categories": [
+        "Outdoor & Bushcraft",
+        "Koken & Accessoires",
+        "Pannensets"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/94df54f60befe5d9c9f5961b6c9b8dc195608a5f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/808bfa70d75e60a111b7dff9fff3145254dc85cc.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0596060e63b30c3df668022acdf8532872e4454c.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/5c64f1582af36f22c71ef23e63216991c2a1064f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e5f56ddd05275b20900fee9e94e2db116032cbf2.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/0fc8c75edbb38a9cd19309395f6f992183346335.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/14306abe98ce0e94a41414f9efb9390f9a23bf92.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/35bb0933167ca4112eb3f2f973e6fa8726e9513a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/cc9de8e8bd24df1b492ea8d751a47af589ef2d57.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f78c63a017f254635cf43b3ce70563c9b0e44078.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/6ea2de144b6a246d68eab523636317b2cc172571.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b7a01b57ed9cc8507208dafae258ce0716e824ef.jpg"
+      ],
+      "status": 200,
+      "title": "Nils Camping Pannenset 2-3 persoons",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-124435353/kampeer-nood-verlichting/nils-campinglamp-oplaadbaar/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Verlichting",
+        "Kampeer / Nood Verlichting"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a57ac260c361bdbc16250be0733b78236f1c4005.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/67bda8b4bf728c8394cf1e8359255c335dff92eb.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ebcf5f1aba82245208477a5578152ca61a3ff1bd.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9eb91450e93101b204c7437dc5227e2284632870.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2b61bd87ee95d7f2364aa97750bfd4926eea931e.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/662615f633459db4776791b4d02ac49584604c91.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2fb75dc4321e0c12628a16c42c1293d5d5387e58.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/7d2e4a2da5bfe8a803229680fcdfb8f82878b4af.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/5f0fba92c3b7efde1488eb2e4801c4d0ecb53650.jpg"
+      ],
+      "status": 200,
+      "title": "Nils Campinglamp Oplaadbaar",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-124521573/kruisbogen/man-kung-mk-xb56bk-frost-wolf-compound-crossbow/": {
+      "categories": [
+        "Boog & Schietsport",
+        "Kruisbogen"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e67fa11ab2094fd0c971df8e36e19f2e357c59ff.jpg"
+      ],
+      "status": 200,
+      "title": "Man Kung MK-XB56BK Frost Wolf compound crossbow",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-126222253/nautic-waterdichte-tassen/nils-waterdichte-tas-backpack-25-liter/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Rugzakken & Tassen",
+        "Nautic / Waterdichte tassen"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9939d75e90851b419f844df8ea3aa0fe159aae5a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9f76191629e1fac27364cb0853729fb73deb94bc.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a0747e1d80c7177b41fbca034f3fb8815e1aa151.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/7c6d71392a5ecec0d6dd89e45d68189a46817425.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f65aacd56577f7a05842bf3bc3919cbda08d84f5.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b653722ef3d1907840e8ae10ec24309bc140ab03.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ced3520a10b6dd49a30ec49377ce7e6ec50d2a4a.jpg"
+      ],
+      "status": 200,
+      "title": "Nils Waterdichte Tas / Backpack 25 liter",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-126885179/luchtbedden/king-size-2-persoons-luchtbed-met-elektrische-pomp-nils/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Matten & Luchtbedden",
+        "Luchtbedden"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/75595790ad839cb6ce79c2871aa9c189f885a392.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/06e7923824bb2f0d0e8ec11f635be17ea2211c22.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/790c08d6ca1079ee703b5020563aee997ebf7011.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/df71747e3020d86f677a3bb882d4f3fb0ea20913.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1b2e7bebe218761387442644b012eda78fb4ec71.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/bf9b521edd4d4d685e3df91d982a23d7f54616d6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/af9f74e7208fef30013ecc92b2b20929e0d69811.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/57f1ed43135a2dac2d35b0f0ec85864c8d845118.jpg"
+      ],
+      "status": 200,
+      "title": "King Size 2 persoons luchtbed met elektrische pomp Nils",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-126885464/luchtbedden/nils-2-persoons-luchtbed-xxl-203-x-152/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Matten & Luchtbedden",
+        "Luchtbedden"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/077cc3cb98664c77c7248370e72c3f6a18250d9a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2996a0baa6520004e75980975ad274708f3ef4e6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/494294eabf9eb279015d222bfe9d183f306d3c89.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/404b1e3091a9c3cbfb0ab801cc1d0126e2fa0539.jpg"
+      ],
+      "status": 200,
+      "title": "Nils 2 persoons luchtbed XXL 203 x 152",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-127384254/bipods/vector-optics-rokstad-fma-4-4-9-2-pan-tilt-bipod/": {
+      "categories": [
+        "Boog & Schietsport",
+        "Bipods"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2619cbf3ad5b275e1fd6e8d8d056f37a0d1c15ca.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e4f6a674ba6f9c403b35ce9929e76d3b475f9702.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ea943072291550dd0ff3f6832581f36dbb9b20a0.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/351749dcfc3aa9e3d5aba0f6d6da3296bf36b694.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/055c23c97acf3d4ec5225844449ff94695538e17.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/91afe2b7420181bae3558d74ae7a33ae42f3b065.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2dc2e135460ebd39f5c93e3aa684e5a1a7cdc793.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/06e4e71239f8a49979bfb94fe5f0e0d4c70a3789.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/329ee320d6d9803ba2e9b255e4943d672ddff4b5.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/ca1587c3d584defc56a3615bd4db73e18070a36c.jpg"
+      ],
+      "status": 200,
+      "title": "Vector Optics Rokstad FMA 4,4 - 9,2 Pan/Tilt Bipod",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-127565599/stretcher-ligbedden/campingbed-opvouwbaar-blue-nils/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Kampeermeubilair",
+        "Stretcher / Ligbedden"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9fb1dc4d5455f85eb5c576458e05a72c924ee12c.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/be06805109e8dcb7952d412200f0e9f4a1e2fce5.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e54cb7709f1b424818f0b35c0f4db0cfe7d176f0.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/7ee8b0acd3fbb029b25a91d9104ac448b9aca08d.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/eac7b16b7ef3224c69ea7369fe61388d7c8641b1.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/eb6bdb46bb846702504b0288a478c7bc049502ed.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/dbfc4c826a0ac40f4053cc420e967edf19cefa39.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b0285310bc529b2e5ca48416a693a40f736b07e5.jpg"
+      ],
+      "status": 200,
+      "title": "Campingbed Opvouwbaar Blue Nils",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-127565844/stretcher-ligbedden/campingbed-opklapbaar-groen-200-cm-nils/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Kampeermeubilair",
+        "Stretcher / Ligbedden"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/7cc17a652e1a311898049792279cd906167f0f2b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9a0f559fcc89ad09ffa7a35dc21431a69e008205.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/6cdcbc5c31400d5070d689c0fe411f4d8cab963f.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/10c97271878acbc3e1cf4a0fcd387578a2474a7a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/8984848e64acbfe65da912a585c2c7bf56470933.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/7e6bee14ef9b9a84a5c6d7a0b0d57de4e3bbec0d.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/984af0cc39d645fce19e165bc7ca91ebfbb46ca7.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/7dd35187ac5581180fb2fc70f7d8130bc8461b5e.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/52caf932e1802e7d2c0d28a02b2c30a4aa0e332d.jpg"
+      ],
+      "status": 200,
+      "title": "Campingbed Opklapbaar Groen 200 cm Nils",
+      "type": "product"
+    },
+    "https://www.outdoorsportshop.nl/a-127565884/stretcher-ligbedden/ultra-light-campingbed-grijs-nils/": {
+      "categories": [
+        "Kampeerartikelen",
+        "Kampeermeubilair",
+        "Stretcher / Ligbedden"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/90b694b724de4565b1c1d9312c1b5f89cc641b42.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c242fd0d7c01dc59dc198cd7aba161b744c34de7.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b0d387d0d5003fe4f2c07d380e2200d93d013cfd.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f7a03269b231402e80bc858793a2801dc3d8de2d.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/89e9398550127713249988ab0452663c139f342d.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/f6e60211e2db52491576b9eabdea142199a65222.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/08f687a62eed32b7ca0447e2b10dc9f852ae883c.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d8d239dd102878e795bc2beaedb32096a16fb0fb.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/9d09ef017954b777e5a06abceb96e178592732fb.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/c5e4573d031147efecc5127c80bd288db638b738.jpg"
+      ],
+      "status": 200,
+      "title": "Ultra Light Campingbed Grijs Nils",
+      "type": "product"
+    },
     "https://www.outdoorsportshop.nl/a-49454509/adventure-food/expedition-breakfast/": {
       "categories": [
         "Outdoor & Bushcraft",
@@ -9937,7 +10216,25 @@
       "title": "Vector X-ACCU 30mm Adjustable Elevation Picatinny Rings XASR-3041",
       "type": "product"
     },
-    "https://www.outdoorsportshop.nl/a-89607779/scope-montage/vector-x-accu-30mm-adjustable-elevation-picatinny-rings-xasr-3041/": {},
+    "https://www.outdoorsportshop.nl/a-89607779/scope-montage/vector-x-accu-30mm-adjustable-elevation-picatinny-rings-xasr-3041/": {
+      "categories": [
+        "Boog & Schietsport",
+        "Richtkijkers / Scopes",
+        "Scope Montage"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e58e057983870cbc5571f385b67544d6bc2844f6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2c88cae61c165a28e4034e7018d40dd4df8f782c.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/cccae8a9e4c89658d4179688b920b7f9f2d14b12.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/2b5c48b2fbb768d594b40cba6877b0a64d0801c6.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/71aa7699dd32b5bbaff941165df37881bdcc71cb.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/faddac01fc4b72c2d90afc7b82de682bf9053483.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/4650b970333680f15b33256af238e66a899b932d.jpg"
+      ],
+      "status": 200,
+      "title": "Vector X-ACCU 30mm Adjustable Elevation Picatinny Rings XASR-3041",
+      "type": "product"
+    },
     "https://www.outdoorsportshop.nl/a-89610332/bipods/ram-bipod-atlas-style/": {
       "categories": [
         "Boog & Schietsport",
@@ -10692,7 +10989,29 @@
       "title": "Wizz Fire Tent Kachel/Stove RVS",
       "type": "product"
     },
-    "https://www.outdoorsportshop.nl/a-97827027/tent-kachel-stove/wizz-fire-tent-kachel-stove-rvs/": {},
+    "https://www.outdoorsportshop.nl/a-97827027/tent-kachel-stove/wizz-fire-tent-kachel-stove-rvs/": {
+      "categories": [
+        "Tenten",
+        "Tent Kachel / Stove"
+      ],
+      "images": [
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/3572e81a26216cc60d9b73260e2720daf48ea60a.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/d9d3e6acd103c6d97b814449449985d76045f60b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/b6544bc7938ff685d53ff5b24fa2f01f16478284.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/38773fce1b0e8c085fe6f49cac05f253ac331766.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/1bbedce07bae73eaee94c268153c3dd366a95bf2.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/e896654b65e28259deccb6efabbffff537a81f7b.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/345418a544390e5e313a2e6f60bbde2a5b183cca.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/36571c8a2cab729913b2eb650ee42bff4c2547d1.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/58d1c09e30c9c6d6685fca926679a7abfbe5c1a7.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/6f719b94e1f7f8e120d6573d4bec220116782078.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/a708397ae93f8205921a289d0e0a891708ee47d2.jpg",
+        "https://asset.myonlinestore.eu/winkel/outdoorsportshop/images/full/72d641443347c32c43c557bf39b7900402dd262b.jpg"
+      ],
+      "status": 200,
+      "title": "Wizz Fire Tent Kachel/Stove RVS",
+      "type": "product"
+    },
     "https://www.outdoorsportshop.nl/a-97892304/brandstof/optimus-gasblik-4-seizoenen-230-gram/": {
       "categories": [
         "Kampeerartikelen",
@@ -12412,6 +12731,12 @@
       "status": 200,
       "type": "product"
     },
-    "https://www.outdoorsportshop.nl/withdrawal": {}
+    "https://www.outdoorsportshop.nl/withdrawal": {
+      "categories": [
+        "Home"
+      ],
+      "status": 200,
+      "type": "product"
+    }
   }
 }
