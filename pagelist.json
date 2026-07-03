@@ -35,8 +35,8 @@
   "config": {
     "p7zip-short": "2602",
     "p7zip-version": "26.02",
-    "portable-git-short": "2.55.0",
-    "portable-git-version": "2.55.0.windows.1",
+    "portable-git-short": "2.55.0.2",
+    "portable-git-version": "2.55.0.windows.2",
     "ublock-origin-version": "1.72.0"
   },
   "pages": {
